@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodFlow Visual Mockups</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --muted: #94a3b8;
+      --text: #f1f5f9;
+      --primary: #e23744;
+      --ok: #10b981;
+      --warn: #f59e0b;
+      --line: #334155;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 24px;
+      line-height: 1.4;
+    }
+    h1,h2,h3 { margin: 0 0 8px; }
+    .subtitle { color: var(--muted); margin-bottom: 24px; }
+    .section { margin: 28px 0 36px; }
+    .label {
+      font-weight: 700;
+      color: #fff;
+      margin: 10px 0 12px;
+      padding: 10px 12px;
+      background: #111827;
+      border-left: 4px solid var(--primary);
+      border-radius: 8px;
+    }
+    .grid { display: grid; gap: 16px; }
+    .phone {
+      width: 360px;
+      background: #0b1220;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 14px;
+      box-shadow: 0 20px 50px rgba(0,0,0,.4);
+    }
+    .notch { height: 16px; width: 120px; border-radius: 0 0 14px 14px; background: #020617; margin: -14px auto 12px; }
+    .screen { background: var(--bg); border-radius: 18px; padding: 12px; min-height: 620px; }
+    .desktop {
+      background: #0b1220;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 18px 40px rgba(0,0,0,.35);
+    }
+    .topbar { background: #111827; padding: 10px 14px; border-bottom: 1px solid var(--line); }
+    .content { padding: 14px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .row { display: flex; gap: 10px; align-items: center; }
+    .between { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+    .pill { font-size: 11px; border: 1px solid var(--line); padding: 4px 8px; border-radius: 999px; color: var(--muted); }
+    .btn { background: var(--primary); color: #fff; border: none; border-radius: 10px; padding: 10px 12px; font-weight: 700; }
+    .ghost { background: transparent; border: 1px solid var(--line); color: var(--text); }
+    .img { height: 64px; width: 72px; border-radius: 10px; background: linear-gradient(135deg, #334155, #475569); }
+    .banner { height: 94px; border-radius: 12px; background: linear-gradient(90deg, #7f1d1d, #e23744); padding: 12px; }
+    .muted { color: var(--muted); font-size: 12px; }
+    .map { height: 190px; border-radius: 12px; background: repeating-linear-gradient(45deg, #1f2937, #1f2937 10px, #111827 10px, #111827 20px); border: 1px dashed #64748b; display:flex;align-items:center;justify-content:center; color:#cbd5e1; font-weight:700; }
+    .timeline { border-left: 2px solid var(--line); padding-left: 10px; margin-left: 8px; }
+    .dot { height: 10px; width: 10px; border-radius: 50%; background: var(--ok); display:inline-block; margin-right: 6px; }
+    .dot.warn { background: var(--warn); }
+    .chart { display: grid; grid-template-columns: repeat(7,1fr); gap: 8px; align-items: end; height: 140px; }
+    .bar { background: linear-gradient(180deg, #f87171, #e23744); border-radius: 8px 8px 4px 4px; }
+    .sidebar { width: 220px; background:#111827; border-right:1px solid var(--line); padding: 14px; }
+    .main { flex: 1; padding: 14px; }
+    .desktop-wrap { display:flex; min-height: 500px; }
+    .kpi { background: var(--card); border:1px solid var(--line); border-radius:10px; padding:10px; min-width: 150px; }
+    .popup { border:2px solid var(--primary); box-shadow: 0 0 0 2px rgba(226,55,68,.2) inset; }
+    .small { font-size: 11px; color: var(--muted); }
+    .two-col { display:grid; grid-template-columns: repeat(auto-fit, minmax(360px,1fr)); gap:18px; }
+  </style>
+</head>
+<body>
+  <h1>FoodFlow — Visual Mockups</h1>
+  <p class="subtitle">Inline HTML/CSS portfolio mockups for all major pages. Theme: dark (#0f172a), card (#1e293b), primary (#e23744).</p>
+
+  <div class="section">
+    <h2>Customer App</h2>
+    <div class="two-col">
+      <div>
+        <div class="label">1) Phone OTP Login Screen — localhost:3000</div>
+        <div class="phone"><div class="notch"></div><div class="screen">
+          <h3>Welcome to FoodFlow</h3><p class="muted">Login with phone OTP</p>
+          <div class="card"><div class="small">Phone Number</div><div class="row"><span class="pill">+91</span><strong>+91-9000000001</strong></div></div>
+          <div class="card"><div class="small">OTP</div><div class="row"><span class="pill">1</span><span class="pill">2</span><span class="pill">3</span><span class="pill">4</span><span class="pill">5</span><span class="pill">6</span></div><div class="muted">Expires in 10:00</div></div>
+          <button class="btn" style="width:100%">Verify OTP</button>
+        </div></div>
+      </div>
+
+      <div>
+        <div class="label">2) Home Page with Restaurant Cards — localhost:3000</div>
+        <div class="phone"><div class="notch"></div><div class="screen">
+          <div class="between"><strong>Koregaon Park, Pune</strong><span class="pill">Cart 2</span></div>
+          <div class="banner"><h3>Flat ₹125 OFF</h3><div class="muted">On orders above ₹399</div></div>
+          <div class="row"><span class="pill">Biryani</span><span class="pill">Pizza</span><span class="pill">Burger</span></div>
+          <div class="card"><div class="row"><div class="img"></div><div><strong>Biryani House</strong><div class="muted">4.2★ • 28 min • ₹40 fee</div></div></div></div>
+          <div class="card"><div class="row"><div class="img"></div><div><strong>Pizza Paradise</strong><div class="muted">4.5★ • 22 min • ₹30 fee</div></div></div></div>
+          <div class="card"><div class="row"><div class="img"></div><div><strong>Burger Lab</strong><div class="muted">4.3★ • 24 min • ₹35 fee</div></div></div></div>
+        </div></div>
+      </div>
+
+      <div>
+        <div class="label">3) Restaurant Detail + Menu — localhost:3000</div>
+        <div class="phone"><div class="notch"></div><div class="screen">
+          <h3>Biryani House</h3><div class="muted">North Indian • Koregaon Park • 4.2★</div>
+          <div class="row"><span class="pill">Starters</span><span class="pill">Main</span><span class="pill">Beverages</span></div>
+          <div class="card between"><div><strong>Hyderabadi Chicken Biryani</strong><div class="muted">Serves 1 • 30 min</div></div><div><strong>₹299</strong><br><button class="btn">ADD</button></div></div>
+          <div class="card between"><div><strong>Mutton Biryani</strong><div class="muted">Spicy • Bestseller</div></div><div><strong>₹379</strong><br><button class="btn">ADD</button></div></div>
+          <div class="card between"><div><strong>Paneer Tikka</strong><div class="muted">Veg</div></div><div><strong>₹229</strong><br><button class="btn">ADD</button></div></div>
+        </div></div>
+      </div>
+
+      <div>
+        <div class="label">4) Cart + Bill Breakdown — localhost:3000</div>
+        <div class="phone"><div class="notch"></div><div class="screen">
+          <h3>Your Cart — Biryani House</h3>
+          <div class="card between"><div>Chicken Biryani x1</div><strong>₹299</strong></div>
+          <div class="card between"><div>Paneer Tikka x1</div><strong>₹229</strong></div>
+          <div class="card">
+            <div class="between"><span>Item Total</span><span>₹528</span></div>
+            <div class="between"><span>Delivery Fee</span><span>₹40</span></div>
+            <div class="between"><span>GST</span><span>₹26</span></div>
+            <div class="between"><span style="color:#86efac">Coupon (FOOD100)</span><span style="color:#86efac">-₹100</span></div>
+            <hr style="border-color:#334155"><div class="between"><strong>Grand Total</strong><strong>₹494</strong></div>
+          </div>
+          <button class="btn" style="width:100%">Place Order</button>
+        </div></div>
+      </div>
+
+      <div>
+        <div class="label">5) Order Tracking + Map + Timeline — localhost:3000</div>
+        <div class="phone"><div class="notch"></div><div class="screen">
+          <h3>Order #FD-2026-00021</h3>
+          <div class="map">Live Map Placeholder (Restaurant • Rider • Home)</div>
+          <div class="card timeline">
+            <div><span class="dot"></span>Order Placed</div>
+            <div><span class="dot"></span>Confirmed</div>
+            <div><span class="dot warn"></span>Preparing</div>
+            <div><span class="dot warn"></span>On the way</div>
+          </div>
+          <div class="card between"><div><strong>Ravi Patil</strong><div class="muted">MH12 AB 4571 • 4.8★</div></div><button class="btn">Call</button></div>
+        </div></div>
+      </div>
+
+      <div>
+        <div class="label">6) Order History — localhost:3000</div>
+        <div class="phone"><div class="notch"></div><div class="screen">
+          <h3>Order History</h3>
+          <div class="row"><span class="pill">Active</span><span class="pill">Past</span></div>
+          <div class="card between"><div><strong>Pizza Paradise</strong><div class="muted">Yesterday • ₹640</div></div><span class="pill">Delivered</span></div>
+          <div class="card between"><div><strong>Burger Lab</strong><div class="muted">2 days ago • ₹320</div></div><button class="btn ghost">Reorder</button></div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Restaurant Portal</h2>
+    <div class="grid">
+      <div>
+        <div class="label">7) Dashboard + Stats + Order Stream — localhost:3001</div>
+        <div class="desktop"><div class="topbar">Biryani House Portal</div><div class="desktop-wrap"><aside class="sidebar">Dashboard<br>Orders<br>Menu<br>Analytics</aside><main class="main">
+          <div class="row"><div class="kpi"><div class="small">Today's Orders</div><strong>47</strong></div><div class="kpi"><div class="small">Revenue</div><strong>₹18,450</strong></div><div class="kpi"><div class="small">Avg Order</div><strong>₹393</strong></div><div class="kpi"><div class="small">Rating</div><strong>4.4★</strong></div></div>
+          <div class="card"><strong>Live Order Stream</strong><div class="card">FD-2026-00031 • 2x Biryani • ₹699 • Accept in 01:32</div><div class="card">FD-2026-00032 • 1x Paneer Tikka • ₹229 • Accept in 01:10</div></div>
+        </main></div></div>
+      </div>
+
+      <div>
+        <div class="label">8) Incoming Order Popup — localhost:3001</div>
+        <div class="desktop"><div class="content"><div class="card popup">
+          <h3>New Order: FD-2026-00035</h3><div class="muted">Customer: Ananya • Koregaon Park • ₹840</div>
+          <div class="card">Items: Chicken Biryani x2, Cold Drink x2</div>
+          <div class="between"><span class="pill">Auto timeout: 01:21</span><div class="row"><button class="btn">Accept</button><button class="btn ghost">Reject</button></div></div>
+        </div></div></div>
+      </div>
+
+      <div>
+        <div class="label">9) Menu Management with Item Cards — localhost:3001</div>
+        <div class="desktop"><div class="content">
+          <div class="between"><h3>Menu Management</h3><button class="btn">+ Add Item</button></div>
+          <div class="row"><span class="pill">Starters (12)</span><span class="pill">Main Course (21)</span><span class="pill">Beverages (9)</span></div>
+          <div class="card between"><div><strong>Chicken Biryani</strong><div class="muted">₹299 • Available</div></div><button class="btn ghost">Toggle</button></div>
+          <div class="card between"><div><strong>Mutton Biryani</strong><div class="muted">₹379 • Sold out</div></div><button class="btn">Enable</button></div>
+        </div></div>
+      </div>
+
+      <div>
+        <div class="label">10) Analytics (CSS Bar Charts) — localhost:3001</div>
+        <div class="desktop"><div class="content"><h3>Revenue Trends (Last 7 Days)</h3>
+          <div class="chart"><div class="bar" style="height:30%"></div><div class="bar" style="height:45%"></div><div class="bar" style="height:55%"></div><div class="bar" style="height:70%"></div><div class="bar" style="height:52%"></div><div class="bar" style="height:80%"></div><div class="bar" style="height:65%"></div></div>
+          <div class="muted">Mon Tue Wed Thu Fri Sat Sun</div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Delivery Partner App</h2>
+    <div class="two-col">
+      <div>
+        <div class="label">11) Go Online / Offline Toggle — localhost:3002</div>
+        <div class="phone"><div class="notch"></div><div class="screen">
+          <h3>Rider Home</h3><div class="muted">Name: Akshay | Pune</div>
+          <div class="card between"><span>Status</span><span class="pill" style="color:#86efac">Online</span></div>
+          <div class="card" style="text-align:center"><button class="btn" style="padding:14px 30px">Go Offline</button><div class="muted">Today's Earnings: ₹450</div></div>
+        </div></div>
+      </div>
+
+      <div>
+        <div class="label">12) Incoming Assignment Popup — localhost:3002</div>
+        <div class="phone"><div class="notch"></div><div class="screen">
+          <div class="card popup"><h3>New Assignment</h3>
+            <div><strong>Biryani House</strong> → Aundh, Pune</div>
+            <div class="muted">Distance: 3.2km • Earnings: ₹70</div>
+            <div class="between"><span class="pill">Expires in 00:25</span></div>
+            <div class="row"><button class="btn">Accept</button><button class="btn ghost">Decline</button></div>
+          </div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Admin Console</h2>
+    <div class="label">13) Platform Overview Dashboard — localhost:3003</div>
+    <div class="desktop"><div class="topbar">FoodFlow Admin Console</div><div class="desktop-wrap"><aside class="sidebar">Overview<br>Restaurants<br>Orders<br>Partners<br>Analytics</aside><main class="main">
+      <div class="row"><div class="kpi"><div class="small">Active Users</div><strong>12,450</strong></div><div class="kpi"><div class="small">Total Orders</div><strong>3,21,102</strong></div><div class="kpi"><div class="small">GMV</div><strong>₹8.4 Cr</strong></div><div class="kpi"><div class="small">Uptime</div><strong>99.96%</strong></div></div>
+      <div class="card"><strong>System Health</strong><div class="row"><span class="pill" style="color:#86efac">user-service UP</span><span class="pill" style="color:#86efac">order-service UP</span><span class="pill" style="color:#86efac">payment-service UP</span><span class="pill">search-service DEGRADED</span></div></div>
+      <div class="card"><h3>Orders by Area (Pune)</h3><div class="chart"><div class="bar" style="height:40%"></div><div class="bar" style="height:65%"></div><div class="bar" style="height:72%"></div><div class="bar" style="height:55%"></div><div class="bar" style="height:80%"></div><div class="bar" style="height:35%"></div><div class="bar" style="height:60%"></div></div></div>
+    </main></div></div>
+  </div>
+</body>
+</html>

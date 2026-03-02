@@ -1,5 +1,10 @@
 # 📸 FoodFlow — Complete Screenshots & Error Documentation
 
+> **Update:** Portfolio-grade visual mockups are now available at [`docs/VISUAL_MOCKUPS.html`](docs/VISUAL_MOCKUPS.html).
+> This HTML contains realistic styled representations of all major screens across Customer App, Restaurant Portal,
+> Delivery Partner App, and Admin Console. Real runtime screenshots will be captured and replace placeholders after
+> full app deployment and end-to-end environment validation.
+
 This document tracks UI evidence, infrastructure captures, benchmark snapshots, and issue-resolution records for interview and review readiness.
 
 ## Screenshot Index
