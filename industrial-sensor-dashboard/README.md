@@ -59,3 +59,11 @@ industrial-sensor-dashboard/
 - `simulator/Dockerfile`: Builds the simulator image used for MQTT and Modbus service containers.
 - `docker-compose.yml`: Orchestrates broker, simulators, backend, and frontend as one local stack.
 - `README.md`: Documents architecture, setup, operation, and interview/demo guidance.
+
+## Additional Documentation Added
+
+- `INTERVIEW_INSTALLATION_GUIDE.md`: Full Windows laptop setup, run modes, validation commands, troubleshooting, and interview demo flow.
+- `PROJECT_DEEP_DIVE.md`: Architecture, protocol responsibilities, reliability notes, and extension roadmap.
+- `SCREENSHOTS_INDEX.html`: Shareable screenshot gallery template for project visuals.
+- `SCREENSHOTS_SUBMISSION.doc`: Checklist-style document for preparing and sharing screenshot packs.
+- `screenshots/README.md`: Naming convention and placement guide for screenshot assets.
